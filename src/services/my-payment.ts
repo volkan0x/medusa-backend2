@@ -118,35 +118,34 @@ class MyPaymentService extends AbstractPaymentProcessor {
     return await this.client.retrieve(paymentId);
   }
 
-  // async initiatePayment(
-  //   context: PaymentProcessorContext,
-  // ): Promise<PaymentProcessorError | PaymentProcessorSessionResponse> {
-  //   try {
-  //     // Prepare the payment data based on the context
-  //     const paymentData = {
-  //       amount: context.amount,
-  //       currency: context.currency,
-  //       // Include other necessary fields like order ID, user details, etc.
-  //     };
+  async initiatePayment(
+    context: PaymentProcessorContext,
+  ): Promise<PaymentProcessorError | PaymentProcessorSessionResponse> {
+    try {
+      // Prepare the payment data based on the context
+      const paymentData = {
+        amount: context.amount,
+        currency_code: context.currency_code,
+        // Include other necessary fields like order ID, user details, etc.
+      };
 
-  //     // Call the PayTR API to initiate the payment
-  //     const clientPayment = await this.client.initiate(paymentData);
+      // Call the PayTR API to initiate the payment
+      const clientPayment = await this.client.initiate(paymentData);
 
-  //     // Return the session data with the payment ID
-  //     return {
-  //       session_data: {
-  //         id: clientPayment.id,
-  //       },
-  //     };
-  //   } catch (error) {
-  //     // Handle errors appropriately
-  //     return {
-  //       message: "Payment initiation failed",
-  //       code: error.code || "UNKNOWN_ERROR",
-  //       error: error.message || "An unknown error occurred",
-  //     } as PaymentProcessorError;
-  //   }
-  // }
+      // Return the session data with the payment ID
+      return {
+        session_data: {
+          id: clientPayment.id,
+        },
+      };
+    } catch (error) {
+      // Handle errors appropriately
+      return {
+        error: error.message || "An unknown error occurred",
+        code: error.code || "UNKNOWN_ERROR",
+      } as PaymentProcessorError;
+    }
+  }
 
   async updatePayment(
     context: PaymentProcessorContext,
