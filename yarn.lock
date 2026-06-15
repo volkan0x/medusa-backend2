@@ -2071,10 +2071,10 @@
   dependencies:
     "@lukeed/csprng" "^1.1.0"
 
-"@medusajs/admin-ui@^2.1.16":
-  version "2.1.16"
-  resolved "https://registry.npmjs.org/@medusajs/admin-ui/-/admin-ui-2.1.16.tgz"
-  integrity sha512-suhH6Q5Ndyw6dpIlxgqLgzeuho6Ie3IKRHltdbub0DzJzv1VfQEJ2CJjReWJ2/GBuiSYnwt7cpOdxfkS1JYcdQ==
+"@medusajs/admin-ui@^2.1.18":
+  version "2.1.18"
+  resolved "https://registry.yarnpkg.com/@medusajs/admin-ui/-/admin-ui-2.1.18.tgz#c1a7a8c82dbea2204953cdceba83aa16e6e02d53"
+  integrity sha512-bUME5vZz455gqkAHErisyP0CsCThIzW3H4pi3z0KyYd6QiOy7Vesm4zBKonR8ddtu897l94QvBJPXqSDCxJE1w==
   dependencies:
     "@babel/parser" "7.22.5"
     "@babel/traverse" "7.22.5"
@@ -2161,11 +2161,11 @@
     zod "^3.22.2"
 
 "@medusajs/admin@^7.1.15":
-  version "7.1.15"
-  resolved "https://registry.npmjs.org/@medusajs/admin/-/admin-7.1.15.tgz"
-  integrity sha512-EHarakUpFYR/2vPLsWpJO697FHRvFjPLUbdOfCuMRw/XiiooI0iaCb06+MYi2Tx14APYy4uLtB9bqrWmTTXq0g==
+  version "7.1.18"
+  resolved "https://registry.yarnpkg.com/@medusajs/admin/-/admin-7.1.18.tgz#373e0f86b2b655cedadb8e02a0c7e27eebdee15f"
+  integrity sha512-eGHskmr6YH8gZEHHuraSPDPirx5IM/7R/Nner5EIStrj76uyIL/2AwynQEx8Gpi3M+vmXzlFvrZPj6k3O07jyQ==
   dependencies:
-    "@medusajs/admin-ui" "^2.1.16"
+    "@medusajs/admin-ui" "^2.1.18"
     "@rollup/plugin-alias" "5.0.0"
     "@rollup/plugin-commonjs" "24.1.0"
     "@rollup/plugin-json" "6.0.0"
@@ -2299,16 +2299,16 @@
     uuid "^9.0.0"
 
 "@medusajs/medusa@^1.20.9":
-  version "1.20.9"
-  resolved "https://registry.npmjs.org/@medusajs/medusa/-/medusa-1.20.9.tgz"
-  integrity sha512-2rE66QhuWsWIp+NAOFUmeiRoP5smG8a+FV29piDz3FYQ5Gvy56d0RaZY/UdvK/oAU4/EQO4P2E7vvYcjQajYBA==
+  version "1.20.11"
+  resolved "https://registry.yarnpkg.com/@medusajs/medusa/-/medusa-1.20.11.tgz#bff1e5827a9b04f61fce7c25b8a97b9f5e980b0f"
+  integrity sha512-oSnsOV9nTY8MGRPIsMfq93lsO7dVz87XxU9+HiCT/ugODmNuy4pYiREz42MabgFpoxPgFi2+NUozNqJp8lhf8A==
   dependencies:
     "@medusajs/core-flows" "^0.0.10"
     "@medusajs/link-modules" "^0.2.12"
     "@medusajs/medusa-cli" "^1.3.23"
     "@medusajs/modules-sdk" "^1.12.12"
     "@medusajs/orchestration" "^0.5.8"
-    "@medusajs/utils" "^1.11.10"
+    "@medusajs/utils" "^1.11.11"
     "@medusajs/workflows-sdk" "^0.1.8"
     awilix "^8.0.0"
     body-parser "^1.19.0"
@@ -2429,10 +2429,10 @@
     sonner "^1.4.41"
     tailwind-merge "^2.2.1"
 
-"@medusajs/utils@^1.11.10":
-  version "1.11.10"
-  resolved "https://registry.npmjs.org/@medusajs/utils/-/utils-1.11.10.tgz"
-  integrity sha512-L0REq+CEArgr1b7P4lddSKHQGrx0IA7exTrHkEGT6b6h2GXT8MRXO4YfFi8PRBZkMu36zDSnfPBIGbjvnpGYsg==
+"@medusajs/utils@^1.11.10", "@medusajs/utils@^1.11.11":
+  version "1.11.11"
+  resolved "https://registry.yarnpkg.com/@medusajs/utils/-/utils-1.11.11.tgz#1a9e6417f6dbeb04532e5f8d5dfb0ca24489a2ce"
+  integrity sha512-r4u1Ctgwt0LftnAHggTfU7RgNppdwY6DfQaefxSrPRSCBMniU6p7j9Lv1G7DkTXZd79V9UNJuixqtlFezGC1tA==
   dependencies:
     "@medusajs/types" "^1.11.17"
     "@mikro-orm/core" "5.9.7"
@@ -6527,16 +6527,7 @@ cross-spawn@^6.0.5:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
-cross-spawn@^7.0.3:
-  version "7.0.3"
-  resolved "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz"
-  integrity sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==
-  dependencies:
-    path-key "^3.1.0"
-    shebang-command "^2.0.0"
-    which "^2.0.1"
-
-cross-spawn@^7.0.6:
+cross-spawn@^7.0.3, cross-spawn@^7.0.6:
   version "7.0.6"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.6.tgz#8a58fe78f00dcd70c370451759dfbfaf03e8ee9f"
   integrity sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==
@@ -7289,12 +7280,12 @@ dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
-dotenv@16.3.1, dotenv@^16.0.3:
+dotenv@16.3.1:
   version "16.3.1"
   resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.3.1.tgz"
   integrity sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==
 
-dotenv@^16.4.5:
+dotenv@^16.0.3, dotenv@^16.4.5:
   version "16.4.5"
   resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.4.5.tgz"
   integrity sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==
@@ -10002,9 +9993,9 @@ medusa-payment-manual@^1.0.25:
   integrity sha512-TMwAcI9MU3kDbBaY2WydurG2Y3ZCB+MGiRpGiGkhrvPLyzQ2qPAL13sb8cWXyuLWRdyHB1INGSh+WN26z4SHNw==
 
 medusa-payment-stripe@^6.0.10:
-  version "6.0.10"
-  resolved "https://registry.npmjs.org/medusa-payment-stripe/-/medusa-payment-stripe-6.0.10.tgz"
-  integrity sha512-Erx492fUcjiIXqObpJm65VVvUaK3O5jXHzh4MQfQb/vZmuRfoBunaSfM2z/xVfYS7mWW8fnban5A2NdaF8QIkw==
+  version "6.0.11"
+  resolved "https://registry.yarnpkg.com/medusa-payment-stripe/-/medusa-payment-stripe-6.0.11.tgz#c519b0a72e9f8f2dadf570d53dbf811d3cc9195b"
+  integrity sha512-IRCIWmhz4sWcWZDcYLr3uz9s1BjC0JuWSMT1CtZPijjU3UmkhwtjRUb4xcHB90fNnbNsU5vCk/0K17K0soOUvA==
   dependencies:
     "@medusajs/utils" "^1.11.10"
     body-parser "^1.19.0"
